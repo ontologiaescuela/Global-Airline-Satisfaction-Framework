@@ -1,0 +1,743 @@
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured framework designed to aggregate and analyze customer satisfaction metrics from worldwide airline services, emphasizing the evaluation of in-flight amenities, seating arrangements, and the effectiveness of customer service." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework> <http://www.w3.org/2000/01/rdf-schema#label> "Global Airline Satisfaction Framework" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnAirline
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an airline to the airports at which it operates." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnAirline> <http://www.w3.org/2000/01/rdf-schema#label> "located_at_airport" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints> <http://www.w3.org/2000/01/rdf-schema#comment> "Match a Passenger with their loyalty points" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints> <http://www.w3.org/2000/01/rdf-schema#label> "hasLoyaltyPoints" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#locatedAtAirport
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#locatedAtAirport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#locatedAtAirport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#locatedAtAirport> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a passenger to the airline they have booked for travel." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#locatedAtAirport> <http://www.w3.org/2000/01/rdf-schema#label> "booked_on_airline" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "booked On Flight" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight> <http://www.w3.org/2000/01/rdf-schema#label> "bookedOnFlight" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#departureDate
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#departureDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#departureDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#departureDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#departureDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The scheduled date of departure for the flight" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#departureDate> <http://www.w3.org/2000/01/rdf-schema#label> "departureDate" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email> <http://www.w3.org/2000/01/rdf-schema#comment> "The email address of the passenger for receiving travel confirmations and updates." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email> <http://www.w3.org/2000/01/rdf-schema#label> "email" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Matches a Passenger with his boarding status" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus> <http://www.w3.org/2000/01/rdf-schema#label> "hasBoardingStatus" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating> <http://www.w3.org/2000/01/rdf-schema#comment> "hasSatisfactionRating" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating> <http://www.w3.org/2000/01/rdf-schema#label> "hasSatisfactionRating" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates if it is delayed" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed> <http://www.w3.org/2000/01/rdf-schema#label> "isDelayed" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates whether the passenger has been notified of the delay" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay> <http://www.w3.org/2000/01/rdf-schema#label> "isNotifiedOfDelay" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location> <http://www.w3.org/2000/01/rdf-schema#comment> "different locations" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#loyaltyPoints
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#loyaltyPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#loyaltyPoints> <http://www.w3.org/2000/01/rdf-schema#comment> "loyalty Points" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#loyaltyPoints> <http://www.w3.org/2000/01/rdf-schema#label> "loyalty_Points" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name> <http://www.w3.org/2000/01/rdf-schema#comment> "type of name" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount> <http://www.w3.org/2000/01/rdf-schema#comment> "offered Discount" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount> <http://www.w3.org/2000/01/rdf-schema#comment> "offeredDiscount" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "policyDescription" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription> <http://www.w3.org/2000/01/rdf-schema#label> "policyDescription" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Actual_Time
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Actual_Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Actual_Time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Actual_Time> <http://www.w3.org/2000/01/rdf-schema#comment> "The real-time at which a flight actually departs or arrives, which may differ from the scheduled time due to various factors." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Actual_Time> <http://www.w3.org/2000/01/rdf-schema#label> "Actual_Time" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs> "http://dbpedia.org/resource/Airline" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an airline company that provides air transport services for traveling passengers" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies> <http://www.w3.org/2000/01/rdf-schema#comment> "Encompasses various policies set by the airline regarding passenger handling and service provision." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies> <http://www.w3.org/2000/01/rdf-schema#label> "Airline_Policies" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs> "http://dbpedia.org/resource/Airport." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an airport, which is a complex comprising runways and buildings for the arrival and departure of aircraft, including facilities for passengers." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport> <http://www.w3.org/2000/01/rdf-schema#label> "Airport" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical and organizational structures and facilities for the operation of airports." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure> <http://www.w3.org/2000/01/rdf-schema#label> "Airport_Infrastructure" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage> <http://www.w3.org/2000/01/rdf-schema#comment> "Baggage" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage> <http://www.w3.org/2000/01/rdf-schema#comment> "Covers all aspects of baggage handling and policies for passengers' luggage" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process> <http://www.w3.org/2000/01/rdf-schema#comment> "The process through which passengers are admitted onto their flights at the gate" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Boarding_Process" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business> <http://www.w3.org/2000/01/rdf-schema#comment> "A class of service that offers enhanced comfort, space, and service compared to economy class" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business_Traveler
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business_Traveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business_Traveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout> <http://www.w3.org/2000/01/rdf-schema#comment> "The arrangement of seats and facilities within the aircraft cabin, which varies by aircraft and airline" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout> <http://www.w3.org/2000/01/rdf-schema#label> "Cabin_Layout" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellation_Policy
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellation_Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellation_Policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellation_Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "Guidelines and procedures for cancelling a flight and the associated refunds or penalties." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellation_Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Cancellation_Policy" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellations
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellations> <http://www.w3.org/2000/01/rdf-schema#comment> "Flights that are not operated as scheduled due to various reasons like weather or operational issues" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellations> <http://www.w3.org/2000/01/rdf-schema#label> "Cancellations" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carbon_Offsetting
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carbon_Offsetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carbon_Offsetting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carbon_Offsetting> <http://www.w3.org/2000/01/rdf-schema#comment> "Initiatives that aim to offset carbon emissions produced by flights through various environmental projects." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carbon_Offsetting> <http://www.w3.org/2000/01/rdf-schema#label> "Carbon_Offsetting" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carry-on_Baggage
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carry-on_Baggage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carry-on_Baggage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carry-on_Baggage> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the luggage that passengers are allowed to bring into the cabin." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carry-on_Baggage> <http://www.w3.org/2000/01/rdf-schema#label> "Carry-on_Baggage" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Casual_Traveler
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Casual_Traveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Casual_Traveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Casual_Traveler> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger who travels occasionally, not frequently enough to benefit from loyalty programs." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Casual_Traveler> <http://www.w3.org/2000/01/rdf-schema#label> "Casual_Traveler" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process> <http://www.w3.org/2000/01/rdf-schema#comment> "The process by which passengers confirm their presence on a flight and possibly choose their seats and print their boarding passes" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Check-In_Process" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Checked_Baggage
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Checked_Baggage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Checked_Baggage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Checked_Baggage> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the luggage that is transported in the hold of the aircraft." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Checked_Baggage> <http://www.w3.org/2000/01/rdf-schema#label> "Checked_Baggage" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Connectivity_Solutions
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Connectivity_Solutions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Connectivity_Solutions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Connectivity_Solutions> <http://www.w3.org/2000/01/rdf-schema#comment> "Solutions that allow passengers to connect to the internet and other communication networks during the flight" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Connectivity_Solutions> <http://www.w3.org/2000/01/rdf-schema#label> "Connectivity_Solutions" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training> <http://www.w3.org/2000/01/rdf-schema#comment> "Programs and courses aimed at training flight and cabin crew to handle operational duties and ensure passenger safety." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training> <http://www.w3.org/2000/01/rdf-schema#label> "Crew_Training" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Customer_Suppor
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Customer_Suppor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Customer_Suppor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Customer_Suppor> <http://www.w3.org/2000/01/rdf-schema#comment> "Support services provided by the airline to assist passengers with inquiries, bookings, and issues." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Customer_Suppor> <http://www.w3.org/2000/01/rdf-schema#label> "Customer_Support" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Delays
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Delays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Delays> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Delays> <http://www.w3.org/2000/01/rdf-schema#comment> "Occur when a flight does not depart or arrive at its scheduled time" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Delays> <http://www.w3.org/2000/01/rdf-schema#label> "Delays" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Desk_Check-In
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Desk_Check-In> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Desk_Check-In> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Desk_Check-In> <http://www.w3.org/2000/01/rdf-schema#comment> "A traditional check-in process where passengers interact with airline staff at a check-in desk at the airport." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Desk_Check-In> <http://www.w3.org/2000/01/rdf-schema#label> "Desk_Check-In" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Destination_Airport
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Destination_Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Destination_Airport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Destination_Airport> <http://www.w3.org/2000/01/rdf-schema#comment> "The airport at which a flight arrives." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Destination_Airport> <http://www.w3.org/2000/01/rdf-schema#label> "Destination_Airport" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Economy
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Economy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Economy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Economy> <http://www.w3.org/2000/01/rdf-schema#comment> "The most basic class of service offering standard amenities at the most affordable price" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Economy> <http://www.w3.org/2000/01/rdf-schema#label> "Economy" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Emergency_Procedures
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Emergency_Procedures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Emergency_Procedures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Emergency_Procedures> <http://www.w3.org/2000/01/rdf-schema#comment> "Procedures and protocols in place to handle emergencies such as medical issues, evacuations, or technical failures during a flight." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Emergency_Procedures> <http://www.w3.org/2000/01/rdf-schema#label> "Emergency_Procedures" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Entertainment_Systems
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Entertainment_Systems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Entertainment_Systems> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Entertainment_Systems> <http://www.w3.org/2000/01/rdf-schema#comment> "Systems providing audio and video entertainment to passengers during the flight" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Entertainment_Systems> <http://www.w3.org/2000/01/rdf-schema#label> "Entertainment_Systems" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact> <http://www.w3.org/2000/01/rdf-schema#comment> "Concerns the environmental effects associated with airline operations and initiatives to mitigate them" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental_Impact" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#First_Class
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#First_Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#First_Class> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#First_Class> <http://www.w3.org/2000/01/rdf-schema#comment> "The highest class of service providing luxurious accommodations and the highest level of service" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#First_Class> <http://www.w3.org/2000/01/rdf-schema#label> "First_Class" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Information_Systems
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Information_Systems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Information_Systems> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Information_Systems> <http://www.w3.org/2000/01/rdf-schema#comment> "Systems that provide real-time flight data to passengers, such as altitude, speed, and estimated time of arrival." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Information_Systems> <http://www.w3.org/2000/01/rdf-schema#label> "Flight_Information_Systems" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the timing of flights, including planned and actual departure and arrival times" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule> <http://www.w3.org/2000/01/rdf-schema#label> "Flight_Schedule" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Frequent_Flyer
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Frequent_Flyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Frequent_Flyer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Frequent_Flyer> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger who travels frequently, often participating in a loyalty program." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Frequent_Flyer> <http://www.w3.org/2000/01/rdf-schema#label> "Frequent_Flyer" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Fuel_Efficiency_Programs
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Fuel_Efficiency_Programs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Fuel_Efficiency_Programs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Fuel_Efficiency_Programs> <http://www.w3.org/2000/01/rdf-schema#comment> "Programs aimed at reducing fuel consumption and increasing the efficiency of aircraft operations." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Fuel_Efficiency_Programs> <http://www.w3.org/2000/01/rdf-schema#label> "Fuel_Efficiency_Programs" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#General_Boarding
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#General_Boarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#General_Boarding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#General_Boarding> <http://www.w3.org/2000/01/rdf-schema#comment> "The standard boarding process where passengers are called to board based on their seat assignment or zone" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#General_Boarding> <http://www.w3.org/2000/01/rdf-schema#label> "General_Boarding" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Service
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Services provided at the airport before departure or after arrival, including check-in and baggage handling" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Service> <http://www.w3.org/2000/01/rdf-schema#label> "Ground_Service" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Transportation
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Transportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Transportation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Transportation> <http://www.w3.org/2000/01/rdf-schema#comment> "Transportation options available to passengers to and from the airport" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Transportation> <http://www.w3.org/2000/01/rdf-schema#label> "Ground_Transportation" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Advisory
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Advisory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Advisory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Advisory> <http://www.w3.org/2000/01/rdf-schema#comment> "Advice and information provided to passengers regarding health precautions and necessary medical procedures for travel." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Advisory> <http://www.w3.org/2000/01/rdf-schema#label> "Health_Advisory" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Measures
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Measures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Measures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Measures> <http://www.w3.org/2000/01/rdf-schema#comment> "Preventive health and sanitation measures taken to protect passengers, including hygiene protocols and medical screenings" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Measures> <http://www.w3.org/2000/01/rdf-schema#label> "Health_Measures" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Service
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service> .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology> <http://www.w3.org/2000/01/rdf-schema#comment> "Technology used on board to enhance passenger experience and flight operations." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology> <http://www.w3.org/2000/01/rdf-schema#label> "In-Flight_Technology" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents> <http://www.w3.org/2000/01/rdf-schema#label> "Incidents" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents> <http://www.w3.org/2000/01/rdf-schema#label> "Represents various disruptions that can occur during airline operations" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Kiosk_Check-In
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Kiosk_Check-In> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Kiosk_Check-In> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Kiosk_Check-In> <http://www.w3.org/2000/01/rdf-schema#comment> "A self-service check-in process using kiosks at the airport, allowing passengers to check-in, select seats, and print boarding passes" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Kiosk_Check-In> <http://www.w3.org/2000/01/rdf-schema#label> "Kiosk_Check-In" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Leisure_Traveler
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Leisure_Traveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Leisure_Traveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards> <http://www.w3.org/2000/01/rdf-schema#label> "Loyalty_Rewards" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards> <http://www.w3.org/2000/01/rdf-schema#label> "Programs designed to reward frequent flyers with benefits and privileges." .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Luggage_Policy
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Luggage_Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Luggage_Policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Luggage_Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "Policy regarding the type and amount of luggage that can be carried on board or checked in." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Luggage_Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Luggage_Policy" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Covers the different types of meal options available to passengers during a flight." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service> <http://www.w3.org/2000/01/rdf-schema#label> "Meal_Service" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Medical_Kits_on_Board
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Medical_Kits_on_Board> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Medical_Kits_on_Board> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Medical_Kits_on_Board> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical kits available on flights to handle health emergencies and basic medical needs" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Medical_Kits_on_Board> <http://www.w3.org/2000/01/rdf-schema#label> "Medical_Kits_on_Board" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Mileage_Accrual
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Mileage_Accrual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Mileage_Accrual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Mileage_Accrual> <http://www.w3.org/2000/01/rdf-schema#comment> "he process of earning miles for flights flown and other eligible activities." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Mileage_Accrual> <http://www.w3.org/2000/01/rdf-schema#label> "Mileage_Accrual" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Multiple_Class_Configuration
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Multiple_Class_Configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Multiple_Class_Configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Multiple_Class_Configuration> <http://www.w3.org/2000/01/rdf-schema#comment> "A cabin layout that includes multiple classes of service, such as economy, business, and first class" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Multiple_Class_Configuration> <http://www.w3.org/2000/01/rdf-schema#label> "Multiple_Class_Configuration" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Online_Check-In
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Online_Check-In> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Online_Check-In> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Online_Check-In> <http://www.w3.org/2000/01/rdf-schema#comment> "A process that allows passengers to check-in and print boarding passes online before arriving at the airport" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Online_Check-In> <http://www.w3.org/2000/01/rdf-schema#label> "Online Check-In" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Origin_Airport
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Origin_Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Origin_Airport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Origin_Airport> <http://www.w3.org/2000/01/rdf-schema#comment> "The airport from which a flight departs." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Origin_Airport> <http://www.w3.org/2000/01/rdf-schema#label> "Origin_Airport" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Overbookings
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Overbookings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Overbookings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Overbookings> <http://www.w3.org/2000/01/rdf-schema#comment> "Situations where more tickets are sold than available seats on the aircraft." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Overbookings> <http://www.w3.org/2000/01/rdf-schema#label> "Overbookings" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#loyaltyPoints> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an individual who travels in an airplane from one location to another" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services> <http://www.w3.org/2000/01/rdf-schema#comment> "Services and measures provided to ensure the health and well-being of passengers during flights." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger_Health_Services" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Pet_Policy
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Pet_Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Pet_Policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Pet_Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "Rules and regulations concerning the transport of pets on aircraft." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Pet_Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Pet_Policy" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Priority_Boarding
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Priority_Boarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Priority_Boarding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Priority_Boarding> <http://www.w3.org/2000/01/rdf-schema#comment> "A boarding process for passengers with priority status, such as first-class passengers or frequent flyers, allowing them earlier access to the plane." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Priority_Boarding> <http://www.w3.org/2000/01/rdf-schema#label> "Priority_Boarding" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Qatar_Airways
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Qatar_Airways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Qatar_Airways> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Qatar_Airways> <http://www.w3.org/2000/01/rdf-schema#comment> "Qatar Airways is a major airline providing international flights, known for its high service quality." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Qatar_Airways> <http://www.w3.org/2000/01/rdf-schema#label> "QatarAirways" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Redemption_Options
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Redemption_Options> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Redemption_Options> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Redemption_Options> <http://www.w3.org/2000/01/rdf-schema#comment> "Various ways in which accumulated miles can be redeemed, such as for flights, upgrades, or other services." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Redemption_Options> <http://www.w3.org/2000/01/rdf-schema#label> "Redemption Options" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Runway_Systems
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Runway_Systems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Runway_Systems> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Runway_Systems> <http://www.w3.org/2000/01/rdf-schema#comment> "Systems that manage the runways at airports including their maintenance and usage scheduling." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Runway_Systems> <http://www.w3.org/2000/01/rdf-schema#label> "Runway_Systems" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ryanair
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ryanair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ryanair> <http://www.w3.org/2000/01/rdf-schema#comment> "Ryanair is a budget airline based in Europe, known for its low-cost flight services." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ryanair> <http://www.w3.org/2000/01/rdf-schema#label> "Ryanair" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures> <http://www.w3.org/2000/01/rdf-schema#comment> "Encompasses various safety protocols and emergency procedures implemented by the airline to ensure passenger safety" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures> <http://www.w3.org/2000/01/rdf-schema#label> "Safety_Measures" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Training
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Training> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Training> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Training> <http://www.w3.org/2000/01/rdf-schema#comment> "Training focused on emergency procedures and safety protocols." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Training> <http://www.w3.org/2000/01/rdf-schema#label> "Safety_Training" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Scheduled_Time
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Scheduled_Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Scheduled_Time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Scheduled_Time> <http://www.w3.org/2000/01/rdf-schema#comment> "The time at which a flight is originally planned to depart or arrive." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Scheduled_Time> <http://www.w3.org/2000/01/rdf-schema#label> "Scheduled_Time" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents various types of services provided by the airline, including in-flight and on the ground services" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service_Training
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service_Training> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service_Training> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service_Training> <http://www.w3.org/2000/01/rdf-schema#comment> "Training that equips crew members with skills for superior passenger service." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service_Training> <http://www.w3.org/2000/01/rdf-schema#label> "Service_Training" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Single_Class_Configuration
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Single_Class_Configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Single_Class_Configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Single_Class_Configuration> <http://www.w3.org/2000/01/rdf-schema#comment> "A cabin layout where the entire aircraft is configured with a single class of service." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Single_Class_Configuration> <http://www.w3.org/2000/01/rdf-schema#label> "Single_Class_Configuration" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Assistance_Services
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Assistance_Services> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Assistance_Services> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Assistance_Services> <http://www.w3.org/2000/01/rdf-schema#comment> "Services provided to passengers requiring additional health-related assistance, such as those with disabilities or elderly passengers" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Assistance_Services> <http://www.w3.org/2000/01/rdf-schema#label> "Special_Assistance_Services" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Meal
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Meal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Meal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Meal> <http://www.w3.org/2000/01/rdf-schema#comment> "Meals designed to meet specific dietary requirements or preferences, such as vegetarian, kosher, or gluten-free options" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Meal> <http://www.w3.org/2000/01/rdf-schema#label> "Special_Meal" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Standard_Meal
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Standard_Meal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Standard_Meal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Standard_Meal> <http://www.w3.org/2000/01/rdf-schema#comment> "The regular meal provided to passengers, which varies depending on the airline and class." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Standard_Meal> <http://www.w3.org/2000/01/rdf-schema#label> "Standard_Meal" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Technical_Training
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Technical_Training> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Technical_Training> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Technical_Training> <http://www.w3.org/2000/01/rdf-schema#comment> "Training that provides technical knowledge necessary for operating and maintaining aircraft systems" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Technical_Training> <http://www.w3.org/2000/01/rdf-schema#label> "Technical_Training" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Terminal_Facilities
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Terminal_Facilities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Terminal_Facilities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Terminal_Facilities> <http://www.w3.org/2000/01/rdf-schema#comment> "Facilities within airport terminals that enhance passenger comfort and provide necessary services." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Terminal_Facilities> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal_Facilities" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Tier_Levels
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Tier_Levels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Tier_Levels> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Tier_Levels> <http://www.w3.org/2000/01/rdf-schema#comment> "Different levels within a loyalty program that offer increasing benefits." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Tier_Levels> <http://www.w3.org/2000/01/rdf-schema#label> "Tier_Levels" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents different classes of service offered by airlines, each providing varying levels of amenities and space." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class> <http://www.w3.org/2000/01/rdf-schema#label> "Travel_Class" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Waste_Reduction_Initiatives
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Waste_Reduction_Initiatives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Waste_Reduction_Initiatives> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Waste_Reduction_Initiatives> <http://www.w3.org/2000/01/rdf-schema#comment> "Efforts to minimize waste generated during flights through recycling and sustainable practices" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Waste_Reduction_Initiatives> <http://www.w3.org/2000/01/rdf-schema#label> "Waste_Reduction_Initiatives" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#CityAirport
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#CityAirport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#CityAirport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#CityAirport> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location> "Los Angeles" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#CityAirport> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs> "http://dbpedia.org/resource/Heathrow_Airport" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#CityAirport> <http://www.w3.org/2000/01/rdf-schema#comment> "Main airport located in the metropolitan area of the city." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#CityAirport> <http://www.w3.org/2000/01/rdf-schema#label> "City Airport" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name> "qatar" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "A leading airline offering global flight services." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline> <http://www.w3.org/2000/01/rdf-schema#label> "Example Airline" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#FlexibleRebooking
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#FlexibleRebooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#FlexibleRebooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#FlexibleRebooking> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription> "Allows rebooking with no extra charge" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#FlexibleRebooking> <http://www.w3.org/2000/01/rdf-schema#comment> "Allows passengers to rebook their flights without any additional charges under certain conditions" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#FlexibleRebooking> <http://www.w3.org/2000/01/rdf-schema#label> "Flexible Rebooking Policy" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#InFlightMeal
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#InFlightMeal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#InFlightMeal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#InFlightMeal> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides meal services for passengers during flights." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#InFlightMeal> <http://www.w3.org/2000/01/rdf-schema#label> "In-Flight Meal Service" .
+# 
+# http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#PepePassenger
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#PepePassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#PepePassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#PepePassenger> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#locatedAtAirport> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#PepePassenger> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email> "pepe@gmail.com" .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#PepePassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "A frequent flyer with Example Airline." .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#PepePassenger> <http://www.w3.org/2000/01/rdf-schema#label> "pepe" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/points> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid12 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid12 <http://www.w3.org/2003/11/swrl#body> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#arguments> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/points> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/points> .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p> .
+_:genid18 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/2003/11/swrl#head> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> "Priority" .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p> .
+_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid23 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid23 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid23 <http://www.w3.org/2003/11/swrl#body> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#arguments> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/rating> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/rating> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/2003/11/swrl#head> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p> .
+_:genid33 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid3 <http://www.w3.org/2003/11/swrl#body> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f> .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p> .
+_:genid5 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f> .
+_:genid7 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f> .
+_:genid9 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/2003/11/swrl#head> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p> .
+_:genid11 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

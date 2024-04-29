@@ -1,0 +1,1382 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#loyaltyPoints"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid20"
+    }, {
+      "@id" : "_:genid18"
+    }, {
+      "@id" : "_:genid14"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid22"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/points"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1000"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/points"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@value" : "Priority"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S3"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid31"
+    }, {
+      "@id" : "_:genid29"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid33"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/rating"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "3"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/rating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S2"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid9"
+    }, {
+      "@id" : "_:genid7"
+    }, {
+      "@id" : "_:genid5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid11"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"
+  } ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A structured framework designed to aggregate and analyze customer satisfaction metrics from worldwide airline services, emphasizing the evaluation of in-flight amenities, seating arrangements, and the effectiveness of customer service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Global Airline Satisfaction Framework"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Actual_Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The real-time at which a flight actually departs or arrives, which may differ from the scheduled time due to various factors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Actual_Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs" : [ {
+    "@value" : "http://dbpedia.org/resource/Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents an airline company that provides air transport services for traveling passengers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Encompasses various policies set by the airline regarding passenger handling and service provision."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airline_Policies"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs" : [ {
+    "@value" : "http://dbpedia.org/resource/Airport."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents an airport, which is a complex comprising runways and buildings for the arrival and departure of aircraft, including facilities for passengers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Physical and organizational structures and facilities for the operation of airports."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airport_Infrastructure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Baggage"
+  }, {
+    "@value" : "Covers all aspects of baggage handling and policies for passengers' luggage"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The process through which passengers are admitted onto their flights at the gate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boarding_Process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A class of service that offers enhanced comfort, space, and service compared to economy class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business_Traveler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The arrangement of seats and facilities within the aircraft cabin, which varies by aircraft and airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cabin_Layout"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellation_Policy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Guidelines and procedures for cancelling a flight and the associated refunds or penalties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cancellation_Policy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Flights that are not operated as scheduled due to various reasons like weather or operational issues"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cancellations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carbon_Offsetting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Initiatives that aim to offset carbon emissions produced by flights through various environmental projects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carbon_Offsetting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carry-on_Baggage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the luggage that passengers are allowed to bring into the cabin."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carry-on_Baggage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Casual_Traveler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A passenger who travels occasionally, not frequently enough to benefit from loyalty programs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Casual_Traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The process by which passengers confirm their presence on a flight and possibly choose their seats and print their boarding passes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Check-In_Process"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Checked_Baggage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the luggage that is transported in the hold of the aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Checked_Baggage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#CityAirport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location" : [ {
+    "@value" : "Los Angeles"
+  } ],
+  "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs" : [ {
+    "@value" : "http://dbpedia.org/resource/Heathrow_Airport"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Main airport located in the metropolitan area of the city."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City Airport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Connectivity_Solutions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Solutions that allow passengers to connect to the internet and other communication networks during the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Connectivity_Solutions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Programs and courses aimed at training flight and cabin crew to handle operational duties and ensure passenger safety."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Crew_Training"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Customer_Suppor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Support services provided by the airline to assist passengers with inquiries, bookings, and issues."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Customer_Support"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Delays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Occur when a flight does not depart or arrive at its scheduled time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Delays"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Desk_Check-In",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A traditional check-in process where passengers interact with airline staff at a check-in desk at the airport."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Desk_Check-In"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Destination_Airport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The airport at which a flight arrives."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Destination_Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Economy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The most basic class of service offering standard amenities at the most affordable price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Economy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Emergency_Procedures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Procedures and protocols in place to handle emergencies such as medical issues, evacuations, or technical failures during a flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Emergency_Procedures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Entertainment_Systems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Systems providing audio and video entertainment to passengers during the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Entertainment_Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Concerns the environmental effects associated with airline operations and initiatives to mitigate them"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Environmental_Impact"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name" : [ {
+    "@value" : "qatar"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A leading airline offering global flight services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Example Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#First_Class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The highest class of service providing luxurious accommodations and the highest level of service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "First_Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#FlexibleRebooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription" : [ {
+    "@value" : "Allows rebooking with no extra charge"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Allows passengers to rebook their flights without any additional charges under certain conditions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flexible Rebooking Policy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Information_Systems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Systems that provide real-time flight data to passengers, such as altitude, speed, and estimated time of arrival."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flight_Information_Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Information about the timing of flights, including planned and actual departure and arrival times"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flight_Schedule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Frequent_Flyer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A passenger who travels frequently, often participating in a loyalty program."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Frequent_Flyer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Fuel_Efficiency_Programs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Programs aimed at reducing fuel consumption and increasing the efficiency of aircraft operations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fuel_Efficiency_Programs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#General_Boarding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The standard boarding process where passengers are called to board based on their seat assignment or zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "General_Boarding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Services provided at the airport before departure or after arrival, including check-in and baggage handling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ground_Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Transportation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transportation options available to passengers to and from the airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ground_Transportation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Advisory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Advice and information provided to passengers regarding health precautions and necessary medical procedures for travel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Health_Advisory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Measures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Preventive health and sanitation measures taken to protect passengers, including hygiene protocols and medical screenings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Health_Measures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Technology used on board to enhance passenger experience and flight operations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "In-Flight_Technology"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#InFlightMeal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides meal services for passengers during flights."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "In-Flight Meal Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incidents"
+  }, {
+    "@value" : "Represents various disruptions that can occur during airline operations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Kiosk_Check-In",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A self-service check-in process using kiosks at the airport, allowing passengers to check-in, select seats, and print boarding passes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Kiosk_Check-In"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Leisure_Traveler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Loyalty_Rewards"
+  }, {
+    "@value" : "Programs designed to reward frequent flyers with benefits and privileges."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Luggage_Policy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Policy regarding the type and amount of luggage that can be carried on board or checked in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Luggage_Policy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Covers the different types of meal options available to passengers during a flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Meal_Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Medical_Kits_on_Board",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medical kits available on flights to handle health emergencies and basic medical needs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical_Kits_on_Board"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Mileage_Accrual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "he process of earning miles for flights flown and other eligible activities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mileage_Accrual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Multiple_Class_Configuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A cabin layout that includes multiple classes of service, such as economy, business, and first class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Multiple_Class_Configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Online_Check-In",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A process that allows passengers to check-in and print boarding passes online before arriving at the airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Online Check-In"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Origin_Airport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The airport from which a flight departs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Origin_Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Overbookings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Situations where more tickets are sold than available seats on the aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Overbookings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents an individual who travels in an airplane from one location to another"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Passenger"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Services and measures provided to ensure the health and well-being of passengers during flights."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Passenger_Health_Services"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#PepePassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email" : [ {
+    "@value" : "pepe@gmail.com"
+  } ],
+  "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#locatedAtAirport" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A frequent flyer with Example Airline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pepe"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Pet_Policy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rules and regulations concerning the transport of pets on aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pet_Policy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Priority_Boarding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A boarding process for passengers with priority status, such as first-class passengers or frequent flyers, allowing them earlier access to the plane."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Priority_Boarding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Qatar_Airways",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Qatar Airways is a major airline providing international flights, known for its high service quality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "QatarAirways"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Redemption_Options",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Various ways in which accumulated miles can be redeemed, such as for flights, upgrades, or other services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Redemption Options"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Runway_Systems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Systems that manage the runways at airports including their maintenance and usage scheduling."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Runway_Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ryanair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ryanair is a budget airline based in Europe, known for its low-cost flight services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ryanair"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Encompasses various safety protocols and emergency procedures implemented by the airline to ensure passenger safety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Safety_Measures"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Training",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Training focused on emergency procedures and safety protocols."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Safety_Training"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Scheduled_Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The time at which a flight is originally planned to depart or arrive."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Scheduled_Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents various types of services provided by the airline, including in-flight and on the ground services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service_Training",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Training that equips crew members with skills for superior passenger service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Service_Training"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Single_Class_Configuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A cabin layout where the entire aircraft is configured with a single class of service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Single_Class_Configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Assistance_Services",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Services provided to passengers requiring additional health-related assistance, such as those with disabilities or elderly passengers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Special_Assistance_Services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Meal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Meals designed to meet specific dietary requirements or preferences, such as vegetarian, kosher, or gluten-free options"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Special_Meal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Standard_Meal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The regular meal provided to passengers, which varies depending on the airline and class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Standard_Meal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Technical_Training",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Training that provides technical knowledge necessary for operating and maintaining aircraft systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Technical_Training"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Terminal_Facilities",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Facilities within airport terminals that enhance passenger comfort and provide necessary services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Terminal_Facilities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Tier_Levels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Different levels within a loyalty program that offer increasing benefits."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tier_Levels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents different classes of service offered by airlines, each providing varying levels of amenities and space."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Travel_Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Waste_Reduction_Initiatives",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Efforts to minimize waste generated during flights through recycling and sustainable practices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Waste_Reduction_Initiatives"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnAirline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an airline to the airports at which it operates."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "located_at_airport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "booked On Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "bookedOnFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#departureDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The scheduled date of departure for the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "departureDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The email address of the passenger for receiving travel confirmations and updates."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "email"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Matches a Passenger with his boarding status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasBoardingStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Match a Passenger with their loyalty points"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasLoyaltyPoints"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "hasSatisfactionRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSatisfactionRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "indicates if it is delayed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isDelayed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "indicates whether the passenger has been notified of the delay"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isNotifiedOfDelay"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#locatedAtAirport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a passenger to the airline they have booked for travel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "booked_on_airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "different locations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#loyaltyPoints",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "loyalty Points"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "loyalty_Points"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "type of name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "offered Discount"
+  }, {
+    "@value" : "offeredDiscount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "policyDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "policyDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/points",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/rating",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+} ]

@@ -1,0 +1,1353 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#"
+     xml:base="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Global_Airline_Satisfaction_Framework="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework">
+        <rdfs:comment>A structured framework designed to aggregate and analyze customer satisfaction metrics from worldwide airline services, emphasizing the evaluation of in-flight amenities, seating arrangements, and the effectiveness of customer service.</rdfs:comment>
+        <rdfs:label>Global Airline Satisfaction Framework</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnAirline -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnAirline">
+        <rdfs:comment>Relates an airline to the airports at which it operates.</rdfs:comment>
+        <rdfs:label>located_at_airport</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards"/>
+        <rdfs:comment>Match a Passenger with their loyalty points</rdfs:comment>
+        <rdfs:label>hasLoyaltyPoints</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#locatedAtAirport -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#locatedAtAirport">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Relates a passenger to the airline they have booked for travel.</rdfs:comment>
+        <rdfs:label>booked_on_airline</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>booked On Flight</rdfs:comment>
+        <rdfs:label>bookedOnFlight</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#departureDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#departureDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>The scheduled date of departure for the flight</rdfs:comment>
+        <rdfs:label>departureDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The email address of the passenger for receiving travel confirmations and updates.</rdfs:comment>
+        <rdfs:label>email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Matches a Passenger with his boarding status</rdfs:comment>
+        <rdfs:label>hasBoardingStatus</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>hasSatisfactionRating</rdfs:comment>
+        <rdfs:label>hasSatisfactionRating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indicates if it is delayed</rdfs:comment>
+        <rdfs:label>isDelayed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indicates whether the passenger has been notified of the delay</rdfs:comment>
+        <rdfs:label>isNotifiedOfDelay</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>different locations</rdfs:comment>
+        <rdfs:label>location</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#loyaltyPoints -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#loyaltyPoints">
+        <rdfs:comment>loyalty Points</rdfs:comment>
+        <rdfs:label>loyalty_Points</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>type of name</rdfs:comment>
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>offered Discount</rdfs:comment>
+        <rdfs:comment>offeredDiscount</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#policyDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>policyDescription</rdfs:comment>
+        <rdfs:label>policyDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Actual_Time -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Actual_Time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"/>
+        <rdfs:comment>The real-time at which a flight actually departs or arrives, which may differ from the scheduled time due to various factors.</rdfs:comment>
+        <rdfs:label>Actual_Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline">
+        <sameAs>http://dbpedia.org/resource/Airline</sameAs>
+        <rdfs:comment>Represents an airline company that provides air transport services for traveling passengers</rdfs:comment>
+        <rdfs:label>Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies">
+        <rdfs:comment>Encompasses various policies set by the airline regarding passenger handling and service provision.</rdfs:comment>
+        <rdfs:label>Airline_Policies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport">
+        <sameAs>http://dbpedia.org/resource/Airport.</sameAs>
+        <rdfs:comment>Represents an airport, which is a complex comprising runways and buildings for the arrival and departure of aircraft, including facilities for passengers.</rdfs:comment>
+        <rdfs:label>Airport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure">
+        <rdfs:comment>Physical and organizational structures and facilities for the operation of airports.</rdfs:comment>
+        <rdfs:label>Airport_Infrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage">
+        <rdfs:comment>Baggage</rdfs:comment>
+        <rdfs:comment>Covers all aspects of baggage handling and policies for passengers&apos; luggage</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout"/>
+        <rdfs:comment>The process through which passengers are admitted onto their flights at the gate</rdfs:comment>
+        <rdfs:label>Boarding_Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class"/>
+        <rdfs:comment>A class of service that offers enhanced comfort, space, and service compared to economy class</rdfs:comment>
+        <rdfs:label>Business</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business_Traveler -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Business_Traveler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout">
+        <rdfs:comment>The arrangement of seats and facilities within the aircraft cabin, which varies by aircraft and airline</rdfs:comment>
+        <rdfs:label>Cabin_Layout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellation_Policy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellation_Policy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies"/>
+        <rdfs:comment>Guidelines and procedures for cancelling a flight and the associated refunds or penalties.</rdfs:comment>
+        <rdfs:label>Cancellation_Policy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellations -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cancellations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents"/>
+        <rdfs:comment>Flights that are not operated as scheduled due to various reasons like weather or operational issues</rdfs:comment>
+        <rdfs:label>Cancellations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carbon_Offsetting -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carbon_Offsetting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact"/>
+        <rdfs:comment>Initiatives that aim to offset carbon emissions produced by flights through various environmental projects.</rdfs:comment>
+        <rdfs:label>Carbon_Offsetting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carry-on_Baggage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Carry-on_Baggage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage"/>
+        <rdfs:comment>Refers to the luggage that passengers are allowed to bring into the cabin.</rdfs:comment>
+        <rdfs:label>Carry-on_Baggage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Casual_Traveler -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Casual_Traveler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+        <rdfs:comment>A passenger who travels occasionally, not frequently enough to benefit from loyalty programs.</rdfs:comment>
+        <rdfs:label>Casual_Traveler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process">
+        <rdfs:comment>The process by which passengers confirm their presence on a flight and possibly choose their seats and print their boarding passes</rdfs:comment>
+        <rdfs:label>Check-In_Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Checked_Baggage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Checked_Baggage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Baggage"/>
+        <rdfs:comment>Refers to the luggage that is transported in the hold of the aircraft.</rdfs:comment>
+        <rdfs:label>Checked_Baggage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Connectivity_Solutions -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Connectivity_Solutions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology"/>
+        <rdfs:comment>Solutions that allow passengers to connect to the internet and other communication networks during the flight</rdfs:comment>
+        <rdfs:label>Connectivity_Solutions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training">
+        <rdfs:comment>Programs and courses aimed at training flight and cabin crew to handle operational duties and ensure passenger safety.</rdfs:comment>
+        <rdfs:label>Crew_Training</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Customer_Suppor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Customer_Suppor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service"/>
+        <rdfs:comment>Support services provided by the airline to assist passengers with inquiries, bookings, and issues.</rdfs:comment>
+        <rdfs:label>Customer_Support</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Delays -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Delays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents"/>
+        <rdfs:comment>Occur when a flight does not depart or arrive at its scheduled time</rdfs:comment>
+        <rdfs:label>Delays</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Desk_Check-In -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Desk_Check-In">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process"/>
+        <rdfs:comment>A traditional check-in process where passengers interact with airline staff at a check-in desk at the airport.</rdfs:comment>
+        <rdfs:label>Desk_Check-In</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Destination_Airport -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Destination_Airport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport"/>
+        <rdfs:comment>The airport at which a flight arrives.</rdfs:comment>
+        <rdfs:label>Destination_Airport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Economy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class"/>
+        <rdfs:comment>The most basic class of service offering standard amenities at the most affordable price</rdfs:comment>
+        <rdfs:label>Economy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Emergency_Procedures -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Emergency_Procedures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures"/>
+        <rdfs:comment>Procedures and protocols in place to handle emergencies such as medical issues, evacuations, or technical failures during a flight.</rdfs:comment>
+        <rdfs:label>Emergency_Procedures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Entertainment_Systems -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Entertainment_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology"/>
+        <rdfs:comment>Systems providing audio and video entertainment to passengers during the flight</rdfs:comment>
+        <rdfs:label>Entertainment_Systems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact">
+        <rdfs:comment>Concerns the environmental effects associated with airline operations and initiatives to mitigate them</rdfs:comment>
+        <rdfs:label>Environmental_Impact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#First_Class -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#First_Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class"/>
+        <rdfs:comment>The highest class of service providing luxurious accommodations and the highest level of service</rdfs:comment>
+        <rdfs:label>First_Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Information_Systems -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Information_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology"/>
+        <rdfs:comment>Systems that provide real-time flight data to passengers, such as altitude, speed, and estimated time of arrival.</rdfs:comment>
+        <rdfs:label>Flight_Information_Systems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule">
+        <rdfs:comment>Information about the timing of flights, including planned and actual departure and arrival times</rdfs:comment>
+        <rdfs:label>Flight_Schedule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Frequent_Flyer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Frequent_Flyer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+        <rdfs:comment>A passenger who travels frequently, often participating in a loyalty program.</rdfs:comment>
+        <rdfs:label>Frequent_Flyer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Fuel_Efficiency_Programs -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Fuel_Efficiency_Programs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact"/>
+        <rdfs:comment>Programs aimed at reducing fuel consumption and increasing the efficiency of aircraft operations.</rdfs:comment>
+        <rdfs:label>Fuel_Efficiency_Programs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#General_Boarding -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#General_Boarding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process"/>
+        <rdfs:comment>The standard boarding process where passengers are called to board based on their seat assignment or zone</rdfs:comment>
+        <rdfs:label>General_Boarding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Service -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service"/>
+        <rdfs:comment>Services provided at the airport before departure or after arrival, including check-in and baggage handling</rdfs:comment>
+        <rdfs:label>Ground_Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Transportation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ground_Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure"/>
+        <rdfs:comment>Transportation options available to passengers to and from the airport</rdfs:comment>
+        <rdfs:label>Ground_Transportation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Advisory -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Advisory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services"/>
+        <rdfs:comment>Advice and information provided to passengers regarding health precautions and necessary medical procedures for travel.</rdfs:comment>
+        <rdfs:label>Health_Advisory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Measures -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Health_Measures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures"/>
+        <rdfs:comment>Preventive health and sanitation measures taken to protect passengers, including hygiene protocols and medical screenings</rdfs:comment>
+        <rdfs:label>Health_Measures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Service -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#In-Flight_Technology">
+        <rdfs:comment>Technology used on board to enhance passenger experience and flight operations.</rdfs:comment>
+        <rdfs:label>In-Flight_Technology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents">
+        <rdfs:label>Incidents</rdfs:label>
+        <rdfs:label>Represents various disruptions that can occur during airline operations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Kiosk_Check-In -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Kiosk_Check-In">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process"/>
+        <rdfs:comment>A self-service check-in process using kiosks at the airport, allowing passengers to check-in, select seats, and print boarding passes</rdfs:comment>
+        <rdfs:label>Kiosk_Check-In</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Leisure_Traveler -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Leisure_Traveler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards">
+        <rdfs:label>Loyalty_Rewards</rdfs:label>
+        <rdfs:label>Programs designed to reward frequent flyers with benefits and privileges.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Luggage_Policy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Luggage_Policy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies"/>
+        <rdfs:comment>Policy regarding the type and amount of luggage that can be carried on board or checked in.</rdfs:comment>
+        <rdfs:label>Luggage_Policy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service">
+        <rdfs:comment>Covers the different types of meal options available to passengers during a flight.</rdfs:comment>
+        <rdfs:label>Meal_Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Medical_Kits_on_Board -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Medical_Kits_on_Board">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services"/>
+        <rdfs:comment>Medical kits available on flights to handle health emergencies and basic medical needs</rdfs:comment>
+        <rdfs:label>Medical_Kits_on_Board</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Mileage_Accrual -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Mileage_Accrual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards"/>
+        <rdfs:comment>he process of earning miles for flights flown and other eligible activities.</rdfs:comment>
+        <rdfs:label>Mileage_Accrual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Multiple_Class_Configuration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Multiple_Class_Configuration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout"/>
+        <rdfs:comment>A cabin layout that includes multiple classes of service, such as economy, business, and first class</rdfs:comment>
+        <rdfs:label>Multiple_Class_Configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Online_Check-In -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Online_Check-In">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Check-In_Process"/>
+        <rdfs:comment>A process that allows passengers to check-in and print boarding passes online before arriving at the airport</rdfs:comment>
+        <rdfs:label>Online Check-In</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Origin_Airport -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Origin_Airport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport"/>
+        <rdfs:comment>The airport from which a flight departs.</rdfs:comment>
+        <rdfs:label>Origin_Airport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Overbookings -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Overbookings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Incidents"/>
+        <rdfs:comment>Situations where more tickets are sold than available seats on the aircraft.</rdfs:comment>
+        <rdfs:label>Overbookings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#loyaltyPoints"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#email"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Represents an individual who travels in an airplane from one location to another</rdfs:comment>
+        <rdfs:label>Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services">
+        <rdfs:comment>Services and measures provided to ensure the health and well-being of passengers during flights.</rdfs:comment>
+        <rdfs:label>Passenger_Health_Services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Pet_Policy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Pet_Policy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies"/>
+        <rdfs:comment>Rules and regulations concerning the transport of pets on aircraft.</rdfs:comment>
+        <rdfs:label>Pet_Policy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Priority_Boarding -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Priority_Boarding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Boarding_Process"/>
+        <rdfs:comment>A boarding process for passengers with priority status, such as first-class passengers or frequent flyers, allowing them earlier access to the plane.</rdfs:comment>
+        <rdfs:label>Priority_Boarding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Qatar_Airways -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Qatar_Airways">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline"/>
+        <rdfs:comment>Qatar Airways is a major airline providing international flights, known for its high service quality.</rdfs:comment>
+        <rdfs:label>QatarAirways</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Redemption_Options -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Redemption_Options">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards"/>
+        <rdfs:comment>Various ways in which accumulated miles can be redeemed, such as for flights, upgrades, or other services.</rdfs:comment>
+        <rdfs:label>Redemption Options</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Runway_Systems -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Runway_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure"/>
+        <rdfs:comment>Systems that manage the runways at airports including their maintenance and usage scheduling.</rdfs:comment>
+        <rdfs:label>Runway_Systems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ryanair -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Ryanair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline"/>
+        <rdfs:comment>Ryanair is a budget airline based in Europe, known for its low-cost flight services.</rdfs:comment>
+        <rdfs:label>Ryanair</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Measures">
+        <rdfs:comment>Encompasses various safety protocols and emergency procedures implemented by the airline to ensure passenger safety</rdfs:comment>
+        <rdfs:label>Safety_Measures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Training -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Safety_Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training"/>
+        <rdfs:comment>Training focused on emergency procedures and safety protocols.</rdfs:comment>
+        <rdfs:label>Safety_Training</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Scheduled_Time -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Scheduled_Time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"/>
+        <rdfs:comment>The time at which a flight is originally planned to depart or arrive.</rdfs:comment>
+        <rdfs:label>Scheduled_Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service">
+        <rdfs:comment>Represents various types of services provided by the airline, including in-flight and on the ground services</rdfs:comment>
+        <rdfs:label>Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service_Training -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service_Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training"/>
+        <rdfs:comment>Training that equips crew members with skills for superior passenger service.</rdfs:comment>
+        <rdfs:label>Service_Training</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Single_Class_Configuration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Single_Class_Configuration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Cabin_Layout"/>
+        <rdfs:comment>A cabin layout where the entire aircraft is configured with a single class of service.</rdfs:comment>
+        <rdfs:label>Single_Class_Configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Assistance_Services -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Assistance_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger_Health_Services"/>
+        <rdfs:comment>Services provided to passengers requiring additional health-related assistance, such as those with disabilities or elderly passengers</rdfs:comment>
+        <rdfs:label>Special_Assistance_Services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Meal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Special_Meal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service"/>
+        <rdfs:comment>Meals designed to meet specific dietary requirements or preferences, such as vegetarian, kosher, or gluten-free options</rdfs:comment>
+        <rdfs:label>Special_Meal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Standard_Meal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Standard_Meal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Meal_Service"/>
+        <rdfs:comment>The regular meal provided to passengers, which varies depending on the airline and class.</rdfs:comment>
+        <rdfs:label>Standard_Meal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Technical_Training -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Technical_Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Crew_Training"/>
+        <rdfs:comment>Training that provides technical knowledge necessary for operating and maintaining aircraft systems</rdfs:comment>
+        <rdfs:label>Technical_Training</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Terminal_Facilities -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Terminal_Facilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport_Infrastructure"/>
+        <rdfs:comment>Facilities within airport terminals that enhance passenger comfort and provide necessary services.</rdfs:comment>
+        <rdfs:label>Terminal_Facilities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Tier_Levels -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Tier_Levels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards"/>
+        <rdfs:comment>Different levels within a loyalty program that offer increasing benefits.</rdfs:comment>
+        <rdfs:label>Tier_Levels</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Travel_Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Loyalty_Rewards"/>
+        <rdfs:comment>Represents different classes of service offered by airlines, each providing varying levels of amenities and space.</rdfs:comment>
+        <rdfs:label>Travel_Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Waste_Reduction_Initiatives -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Waste_Reduction_Initiatives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Environmental_Impact"/>
+        <rdfs:comment>Efforts to minimize waste generated during flights through recycling and sustainable practices</rdfs:comment>
+        <rdfs:label>Waste_Reduction_Initiatives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#CityAirport -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#CityAirport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airport"/>
+        <location>Los Angeles</location>
+        <sameAs>http://dbpedia.org/resource/Heathrow_Airport</sameAs>
+        <rdfs:comment>Main airport located in the metropolitan area of the city.</rdfs:comment>
+        <rdfs:label>City Airport</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline"/>
+        <name>qatar</name>
+        <rdfs:comment>A leading airline offering global flight services.</rdfs:comment>
+        <rdfs:label>Example Airline</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#FlexibleRebooking -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#FlexibleRebooking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Airline_Policies"/>
+        <policyDescription>Allows rebooking with no extra charge</policyDescription>
+        <rdfs:comment>Allows passengers to rebook their flights without any additional charges under certain conditions</rdfs:comment>
+        <rdfs:label>Flexible Rebooking Policy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#InFlightMeal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#InFlightMeal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Service"/>
+        <rdfs:comment>Provides meal services for passengers during flights.</rdfs:comment>
+        <rdfs:label>In-Flight Meal Service</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#PepePassenger -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#PepePassenger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+        <locatedAtAirport rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#ExampleAirline"/>
+        <email>pepe@gmail.com</email>
+        <rdfs:comment>A frequent flyer with Example Airline.</rdfs:comment>
+        <rdfs:label>pepe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/points">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/rating">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasLoyaltyPoints"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/points"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/points"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasBoardingStatus"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"/>
+                        <swrl:argument2>Priority</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Passenger"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#hasSatisfactionRating"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/rating"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/rating"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#offeredDiscount"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#Flight_Schedule"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isDelayed"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#bookedOnFlight"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework#isNotifiedOfDelay"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kiki/ontologies/2024/3/Global_Airline_Satisfaction_Framework/p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
